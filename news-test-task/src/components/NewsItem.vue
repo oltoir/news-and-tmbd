@@ -1,5 +1,6 @@
 <template>
 <v-card
+    @click="openPage"
     flat
     class="news-card">
   <img class="news_poster" :src="poster_path" alt="" @error="$event.target.src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/BBC_News_2019.svg/1200px-BBC_News_2019.svg.png'">
@@ -29,6 +30,11 @@ export default {
       default: ""
     },
   },
+  methods :{
+    openPage(){
+      this.$router.push('News/'+this.id)
+    },
+  }
 }
 </script>
 
