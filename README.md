@@ -1,2 +1,2 @@
 # news-and-tmbd
- test task
+ test task on vue for a tech ineterview
